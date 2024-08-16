@@ -4,7 +4,7 @@ input=sys.stdin.readline
 max = 1000000
 is_prime_num = [True] * (max+1)
 
-for i in range(2, int((max+1)**(1/2))+1):
+for i in range(3, int((max+1)**(1/2))+1, 2):
     if is_prime_num[i]:
         for j in range(i+i, max+1, i): 
             is_prime_num[j] = False
